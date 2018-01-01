@@ -3117,8 +3117,8 @@ meepo-core@>=2.9.4, meepo-core@>=2.9.5, meepo-core@>=3.0.4, meepo-core@>=3.1.3:
     zone.js "0.8.4"
 
 meepo-forms@>=1.5.1:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/meepo-forms/-/meepo-forms-1.7.0.tgz#bc3be0f34285fd1cae2d71cb258bca620bd75e62"
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/meepo-forms/-/meepo-forms-1.7.1.tgz#6290e4d6076cddad06c162324117666fa21d81b9"
   dependencies:
     "@angular/common" "5.2.0-beta.1"
     "@angular/core" "5.2.0-beta.1"
@@ -3183,6 +3183,17 @@ meepo-store@>=1.0.0:
     rxjs "^5.5.5"
     zone.js "0.8.4"
 
+meepo-store@>=1.0.1:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/meepo-store/-/meepo-store-1.0.4.tgz#57c71765f2d8cfd9098d46faa3167910d6f5f045"
+  dependencies:
+    "@angular/common" "5.2.0-beta.1"
+    "@angular/core" "5.2.0-beta.1"
+    "@angular/platform-browser" "5.2.0-beta.1"
+    reflect-metadata "^0.1.10"
+    rxjs "^5.5.5"
+    zone.js "0.8.4"
+
 meepo-ua@>=1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/meepo-ua/-/meepo-ua-1.0.3.tgz#cc25e587fb522cc743d1f27a60dfbc1da6cdb070"
@@ -3220,7 +3231,7 @@ meepo-uuid@>=1.0.8, meepo-uuid@>=1.1.1:
     rxjs "^5.5.5"
     zone.js "0.8.4"
 
-meepo-xscroll@>=1.2.9, meepo-xscroll@>=1.3.0:
+meepo-xscroll@>=1.2.9, meepo-xscroll@>=1.3.0, meepo-xscroll@^1.3.6:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/meepo-xscroll/-/meepo-xscroll-1.4.2.tgz#5f20e80ea0cbf79c95c419aba45e239fce7cbcb9"
   dependencies:
@@ -3232,9 +3243,9 @@ meepo-xscroll@>=1.2.9, meepo-xscroll@>=1.3.0:
     xscroll "^3.1.3"
     zone.js "0.8.4"
 
-meepo-xscroll@^1.3.6:
-  version "1.3.8"
-  resolved "https://registry.yarnpkg.com/meepo-xscroll/-/meepo-xscroll-1.3.8.tgz#5e86dfc905168b03b6958b941e1691d39b1c851a"
+meepo-xscroll@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/meepo-xscroll/-/meepo-xscroll-1.4.4.tgz#4f357038510f3c22931232c5494c000de2c6cd9e"
   dependencies:
     "@angular/common" "5.2.0-beta.1"
     "@angular/core" "5.2.0-beta.1"

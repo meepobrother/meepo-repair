@@ -1,12 +1,12 @@
 <div class="car-tabs">
-    <div class="car-item" [class.on]="my" (click)="myCar()">
+    <div class="car-item" [class.on]="my === 'my'" (click)="myCar()">
         我的汽车
     </div>
-    <div class="car-item" [class.on]="!my" (click)="myCreate()">
+    <div class="car-item" [class.on]="my === 'my.create'" (click)="myCreate()">
         我录入的
     </div>
 </div>
-<xscroll [full]="true">
+<xscroll #xscroll [full]="true" (onLoad)="onMore($event)">
     <div class="car-list">
         <div class="car-list-item" (click)="editor(item)" *ngFor="let item of items">
             <div class="car-list-item_left">
@@ -23,6 +23,10 @@
         </div>
         <div class="car-list-empty" *ngIf="items.length == 0">
             没有相关数据
+            <a (click)="add()">立即添加</a>
         </div>
     </div>
 </xscroll>
+<div class="car_list_add" (click)="add()">
+    +
+</div>

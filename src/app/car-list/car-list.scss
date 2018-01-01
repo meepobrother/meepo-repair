@@ -47,3 +47,18 @@ xscroll {
     justify-content: center;
     align-items: center;
 }
+
+.car_list_add {
+    display: flex;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    width: 2em;
+    height: 2em;
+    background: #ccc;
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
