@@ -1,0 +1,11 @@
+<div class="money-tabs">
+    <div class="money-item" [class.on]="on === 'all'" (click)="onAll()">
+        所有
+    </div>
+    <div class="money-item" [class.on]="on === 'unuse'" (click)="onUnUse()">
+        可提现
+    </div>
+    <div class="money-item" [class.on]="on === 'used'" (click)="onUsed()">
+        已提现
+    </div>
+</div>

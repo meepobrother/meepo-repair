@@ -12,6 +12,9 @@ import { CarEditorComponent } from './car-editor/car-editor';
 import { CarListComponent } from './car-list/car-list';
 import { TicketListComponent } from './ticket-list/ticket-list';
 import { OrderListComponent } from './order-list/order-list';
+import { MoneyListComponent } from './money-list/money-list';
+
+import { MyInfofComponent } from './my-info/my-info';
 
 
 
@@ -31,6 +34,12 @@ const routes: Routes = [{
 }, {
     component: OrderListComponent,
     path: 'repair/order/list'
+}, {
+    component: MoneyListComponent,
+    path: 'repair/money/list'
+}, {
+    component: MyInfofComponent,
+    path: 'repair/my/info'
 }];
 
 @NgModule({
@@ -40,7 +49,9 @@ const routes: Routes = [{
         CarListComponent,
         RepairRootComponent,
         TicketListComponent,
-        OrderListComponent
+        OrderListComponent,
+        MoneyListComponent,
+        MyInfofComponent
     ],
     imports: [
         CommonModule,
@@ -55,7 +66,9 @@ const routes: Routes = [{
         CarListComponent,
         RepairRootComponent,
         TicketListComponent,
-        OrderListComponent
+        OrderListComponent,
+        MoneyListComponent,
+        MyInfofComponent
     ],
     providers: [],
 })
