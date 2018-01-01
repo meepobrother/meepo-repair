@@ -23,6 +23,13 @@ export class CarListComponent implements OnInit {
         this.getCars();
     }
 
+    onRefresh(e: any) {
+        this.page = 0;
+        this.items = [];
+        this.getCars();
+        e.next();
+    }
+
     getCars() {
         if (this.my === 'my') {
             let items;
@@ -47,9 +54,9 @@ export class CarListComponent implements OnInit {
         this.page++;
         this.getCars();
         e.next();
-        setTimeout(()=>{
+        setTimeout(() => {
             this.xscroll.onEnd();
-        },300);
+        }, 300);
     }
 
     myCar() {

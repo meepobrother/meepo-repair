@@ -55,10 +55,11 @@ xscroll {
     bottom: 50px;
     width: 2em;
     height: 2em;
-    background: #ccc;
+    background: rgb(82, 81, 81);
     color: #fff;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }

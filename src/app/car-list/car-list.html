@@ -6,7 +6,7 @@
         我录入的
     </div>
 </div>
-<xscroll #xscroll [full]="true" (onLoad)="onMore($event)">
+<xscroll #xscroll [full]="true" (onRefresh)="onRefresh($event)" (onLoad)="onMore($event)">
     <div class="car-list">
         <div class="car-list-item" (click)="editor(item)" *ngFor="let item of items">
             <div class="car-list-item_left">

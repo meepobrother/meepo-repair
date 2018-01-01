@@ -83,5 +83,5 @@ export class CarEditorDefault {
     licheng: string = '';
     realname: string = '';
     mobile: string = '';
-    image: string[] = [];
+    images: string[] = [];
 }
