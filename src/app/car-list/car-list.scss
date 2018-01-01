@@ -1,65 +1,76 @@
-.car-tabs {
-    display: flex;
-    flex-direction: row;
-    background-color: #fff;
-    position: relative;
-    .car-item {
-        flex: 1;
-        line-height: 30px;
-        height: 30px;
-        text-align: center;
-        &.on {
-            border-bottom: 1px solid orangered;
-        }
-    }
-}
-
-xscroll {
-    position: relative;
-    display: block;
-}
-
-.car-list {
+car-list {
     display: flex;
     flex-direction: column;
-    padding: 0px;
-    min-height: 300px;
-    .car-list-item {
+    .car-tabs {
         display: flex;
         flex-direction: row;
-        padding: 10px;
         background-color: #fff;
-        margin-top: 5px;
+        position: relative;
+        height: 44px;
+        box-shadow: 3px 2px 1px 0px #dedede;
+        margin-bottom: 5px;
+        .car-item {
+            flex: 1;
+            line-height: 44px;
+            height: 44px;
+            text-align: center;
+            position: relative;
+            &.on {
+                &:after {
+                    content: " ";
+                    bottom: 0px;
+                    left: 10px;
+                    right: 10px;
+                    display: block;
+                    border-bottom: 2px solid orangered;
+                }
+            }
+        }
     }
-    .car-list-item_left {
-        margin-right: 10px;
-    }
-    .car-list-item_body {
+    .car-container {
         flex: 1;
+        position: relative !important;
     }
-}
-
-.car-list-empty {
-    height: 300px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.car_list_add {
-    display: flex;
-    position: fixed;
-    right: 10px;
-    bottom: 50px;
-    width: 2em;
-    height: 2em;
-    background: rgb(82, 81, 81);
-    color: #fff;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
+    .car-list {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        min-height: 300px;
+        .car-list-item {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            background-color: #fff;
+            margin-top: 5px;
+        }
+        .car-list-item_left {
+            margin-right: 10px;
+        }
+        .car-list-item_body {
+            flex: 1;
+        }
+    }
+    .car-list-empty {
+        height: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .car_list_add {
+        display: flex;
+        position: fixed;
+        right: 10px;
+        bottom: 50px;
+        width: 2em;
+        height: 2em;
+        background: rgb(82, 81, 81);
+        color: #fff;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
 }

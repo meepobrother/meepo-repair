@@ -6,27 +6,29 @@
         我录入的
     </div>
 </div>
-<xscroll #xscroll [full]="true" (onRefresh)="onRefresh($event)" (onLoad)="onMore($event)">
-    <div class="car-list">
-        <div class="car-list-item" (click)="editor(item)" *ngFor="let item of items">
-            <div class="car-list-item_left">
-                <p>{{item.carNum}}</p>
-                <p>{{item.jarNum}}</p>
-                <p>{{item.licheng}}公里</p>
-                <p>{{item.title}}</p>
+<div class="car-container">
+    <xscroll #xscroll [full]="true" (onRefresh)="onRefresh($event)" (onLoad)="onMore($event)">
+        <div class="car-list">
+            <div class="car-list-item" (click)="editor(item)" *ngFor="let item of items">
+                <div class="car-list-item_left">
+                    <p>{{item.carNum}}</p>
+                    <p>{{item.jarNum}}</p>
+                    <p>{{item.licheng}}公里</p>
+                    <p>{{item.title}}</p>
+                </div>
+                <div class="car-list-item_body">
+                    <p>{{item.realname}}</p>
+                    <p>{{item.mobile}}</p>
+                    <p>{{item.desc}}</p>
+                </div>
             </div>
-            <div class="car-list-item_body">
-                <p>{{item.realname}}</p>
-                <p>{{item.mobile}}</p>
-                <p>{{item.desc}}</p>
+            <div class="car-list-empty" *ngIf="items.length == 0">
+                没有相关数据
+                <a (click)="add()">立即添加</a>
             </div>
         </div>
-        <div class="car-list-empty" *ngIf="items.length == 0">
-            没有相关数据
-            <a (click)="add()">立即添加</a>
-        </div>
-    </div>
-</xscroll>
-<div class="car_list_add" (click)="add()">
-    +
+    </xscroll>
+</div>
+<div>
+    <a class="weui-btn weui-btn_primary" (click)="add()">添加</a>
 </div>

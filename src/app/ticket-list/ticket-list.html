@@ -1,0 +1,11 @@
+<div class="ticket-tabs">
+    <div class="ticket-item" [class.on]="on === 'unuse'" (click)="onUnUse()">
+        未使用
+    </div>
+    <div class="ticket-item" [class.on]="on === 'used'" (click)="onUsed()">
+        已使用
+    </div>
+    <div class="ticket-item" [class.on]="on === 'delete'" (click)="onDelete()">
+        已过期
+    </div>
+</div>

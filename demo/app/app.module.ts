@@ -8,7 +8,7 @@ import { Routes } from '@angular/router';
 let routes: Routes = [{
   path: '',
   pathMatch: 'full',
-  redirectTo: 'repair/car/list'
+  redirectTo: 'repair/index'
 }];
 
 @NgModule({

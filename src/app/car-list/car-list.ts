@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { StoreService } from 'meepo-store';
 import { myCarList, myCreateCarList } from '../db';
@@ -6,14 +6,15 @@ import { XscrollComponent } from 'meepo-xscroll';
 @Component({
     selector: 'car-list',
     templateUrl: './car-list.html',
-    styleUrls: ['./car-list.scss']
+    styleUrls: ['./car-list.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 export class CarListComponent implements OnInit {
     my: string = 'my';
     @ViewChild('xscroll') xscroll: XscrollComponent;
     @Input() items: any[] = [];
     page: number = 1;
-    psize: number = 5;
+    psize: number = 10;
     constructor(
         public router: Router,
         public store: StoreService

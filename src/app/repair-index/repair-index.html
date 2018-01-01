@@ -1,3 +1,15 @@
 <!-- <car-editor></car-editor> -->
 <!-- <car-list></car-list> -->
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+
+<ul class="repair-index">
+    <li class="repair-index_item" [routerLink]="['/repair/car/list']">
+        我的汽车
+    </li>
+    <li class="repair-index_item" [routerLink]="['/repair/ticket/list']">
+        我的卡券
+    </li>
+    <li class="repair-index_item" [routerLink]="['/repair/order/list']">
+        维修记录
+    </li>
+</ul>

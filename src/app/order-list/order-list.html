@@ -1,0 +1,11 @@
+<div class="order-tabs">
+    <div class="order-item" [class.on]="on === 'doing'" (click)="onDoing()">
+        进行中
+    </div>
+    <div class="order-item" [class.on]="on === 'pay'" (click)="onPay()">
+        待支付
+    </div>
+    <div class="order-item" [class.on]="on === 'finish'" (click)="onFinish()">
+        已完成
+    </div>
+</div>

@@ -6,8 +6,15 @@ import { StoreModule } from 'meepo-store';
 
 
 import { RepairIndexComponent } from './repair-index/repair-index';
+import { RepairRootComponent } from './repair-root/repair-root';
+
 import { CarEditorComponent } from './car-editor/car-editor';
 import { CarListComponent } from './car-list/car-list';
+import { TicketListComponent } from './ticket-list/ticket-list';
+import { OrderListComponent } from './order-list/order-list';
+
+
+
 import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [{
     component: CarEditorComponent,
@@ -17,14 +24,23 @@ const routes: Routes = [{
     path: 'repair/car/list'
 }, {
     component: RepairIndexComponent,
-    path: 'repair'
+    path: 'repair/index'
+}, {
+    component: TicketListComponent,
+    path: 'repair/ticket/list'
+}, {
+    component: OrderListComponent,
+    path: 'repair/order/list'
 }];
 
 @NgModule({
     declarations: [
         RepairIndexComponent,
         CarEditorComponent,
-        CarListComponent
+        CarListComponent,
+        RepairRootComponent,
+        TicketListComponent,
+        OrderListComponent
     ],
     imports: [
         CommonModule,
@@ -36,7 +52,10 @@ const routes: Routes = [{
     exports: [
         RepairIndexComponent,
         CarEditorComponent,
-        CarListComponent
+        CarListComponent,
+        RepairRootComponent,
+        TicketListComponent,
+        OrderListComponent
     ],
     providers: [],
 })
